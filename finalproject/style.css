@@ -111,3 +111,77 @@ nav button {
 .right-section {
     flex: 1;
 }
+
+.right-section img {
+    object-fit: cover;
+}
+/* hero section end */
+
+.product {
+    margin: 20px 0;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-header h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.product-header button {
+    border: none;
+    padding: 5px 15px;
+    background-color: #044c94;
+    color: white;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    margin-top: 20px;
+}
+
+.card1, .card2, .card3 {
+    margin-right: 15px;
+}
+
+.card1, .card2, .card3, .card4 {
+    background-color: rgba(0, 0, 122,0.1);
+    width: 440px;
+    border-radius: 10px;
+}
+
+.card-image {
+    width: 230px;
+    padding: 20px 0;
+    padding-left: 60px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+small {
+    color: #3f3c3c;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price {
+    margin-bottom: 10px;
+    color: #0163f5;
+}
