@@ -155,9 +155,9 @@ nav button {
 }
 
 .card-image {
-    width: 230px;
+    width: 450px;
     padding: 20px 0;
-    padding-left: 60px;
+    padding-left: 10px;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -173,15 +173,18 @@ small {
     color: #3f3c3c;
     font-weight: 200;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 h4 {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 700;
 }
 
 .price {
     margin-bottom: 10px;
     color: #0163f5;
+    font-size: 20px;
+    font-weight: 500;
 }
