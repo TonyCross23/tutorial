@@ -218,6 +218,7 @@ h4 {
 
 .category-card {
     display: flex;
+    justify-content: space-between;
 }
 
 .category-card1,
@@ -271,6 +272,7 @@ h4 {
 .footer-title {
     display: flex;
     justify-content: center;
+    /* margin-left: 700px; */
     padding: 20px 0;
 }
 
