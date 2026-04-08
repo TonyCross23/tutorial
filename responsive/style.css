@@ -20,7 +20,10 @@
 
 .header  {
     background-color: var(--bg-color);
-}
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+}   
 
 nav {
     display: flex;
@@ -34,25 +37,32 @@ nav h1 {
 
 ul {
     display: flex;
+    gap: 20px;
 }
 
 ul li {
-    margin-right: 10px;
     padding: 10px 0;
 }
 
 ul li a {
     color: var(--text-color);
+    transition: transform .5s ease-in-out;
+}
+
+ul li a:hover {
+    border-bottom: 2px solid red;
+    transform: translateX(-10px);
 }
 
 .container {
     padding: 10px 20px;
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    /* grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px; */
+    gap: 20px;
 }
 
 .card {
-    width: 390px;
     background-color: var(--bg-color);
     border-radius: 15px;
     overflow: hidden;
@@ -86,6 +96,7 @@ ul li a {
 
 @media (max-width: 991px) {
     .container {
+        display: flex;
         max-width: 400px;
         flex-direction: column;
         margin: 0 auto;
@@ -98,7 +109,10 @@ ul li a {
 
 @media (max-width: 767px) {
     .container {
+        display: flex;
+        max-width: 300px;
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .header {
@@ -111,5 +125,9 @@ ul li a {
 
     .hidden {
         display: none;
+    }
+
+    .card {
+        width: 250px;
     }
 }
