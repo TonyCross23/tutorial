@@ -1,0 +1,10 @@
+client ---> btn, white ---> 10 -> 
+
+responsive
+------------
+
+tablet
+max-width === 991px ---> 768px;
+
+mobile 
+max-width === 767px ---> 380px;
