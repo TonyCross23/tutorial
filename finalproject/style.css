@@ -15,19 +15,27 @@ body {
     font-variation-settings: "wdth" 100;
 }
 
+/* global css */
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/*change code*/
 .wapper {
-    padding: 0 40px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 nav {
     padding-top: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
 }
 
 ul li {
@@ -36,11 +44,6 @@ ul li {
 
 ul li a {
     color: #0a0000;
-}
-
-.right-nav {
-    display: flex;
-    justify-content: space-between;
 }
 
 .cart {
@@ -64,8 +67,6 @@ nav button {
     width: 100%;
     height: 380px;
     border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
     padding: 0 20px;
 }
 
@@ -122,11 +123,6 @@ nav button {
     margin: 20px 0;
 }
 
-.product-header {
-    display: flex;
-    justify-content: space-between;
-}
-
 .product-header h3 {
     font-size: 36px;
     font-weight: 700;
@@ -140,15 +136,15 @@ nav button {
     border-radius: 10px;
 }
 
-.card {
-    display: flex;
+.card,
+.category-card {
+    display: grid;
+    /*change code*/
     margin-top: 20px;
-}
-
-.card1,
-.card2,
-.card3 {
-    margin-right: 15px;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    /*change code*/
+    gap: 20px;
+    /*change code*/
 }
 
 .card1,
@@ -156,20 +152,19 @@ nav button {
 .card3,
 .card4 {
     background-color: rgba(0, 0, 122, 0.1);
-    width: 440px;
     border-radius: 10px;
 }
 
 .card-image {
-    width: 450px;
+    width: 100%;
     padding: 20px 0;
     padding-left: 10px;
     object-fit: cover;
+    object-position: center;
     margin-bottom: 10px;
 }
 
 .card-content {
-    display: flex;
     justify-content: start;
     flex-direction: column;
     padding-left: 40px;
@@ -201,12 +196,6 @@ h4 {
     padding: 10px 0;
 }
 
-.category-title {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
 .category-title h5 {
     font-size: 40px;
     font-weight: 700;
@@ -216,22 +205,12 @@ h4 {
     font-size: 40px;
 }
 
-.category-card {
-    display: flex;
-}
-
 .category-card1,
 .category-card2,
 .category-card3,
 .category-card4 {
     background-color: rgba(0, 0, 122, 0.1);
     border-radius: 10px;
-}
-
-.category-card1,
-.category-card2,
-.category-card3 {
-    margin-right: 20px;
 }
 
 .category-text {
@@ -257,8 +236,10 @@ h4 {
 }
 
 .category-image {
-    padding-left: 80px;
+    padding-left: 70px;
+    /* change */
     padding-top: 40px;
+    object-fit: cover;
 }
 
 /* category end */
@@ -269,8 +250,6 @@ h4 {
 }
 
 .footer-title {
-    display: flex;
-    justify-content: center;
     padding: 20px 0;
 }
 
@@ -280,11 +259,12 @@ h4 {
 }
 
 .footer-card {
-    display: flex;
     justify-content: space-around;
 }
 
-.footer-card1, .footer-card2, .footer-card3 {
+.footer-card1,
+.footer-card2,
+.footer-card3 {
     width: 400px;
     text-align: center;
     margin-bottom: 20px;
@@ -294,6 +274,7 @@ h4 {
     font-size: 40px;
     margin-bottom: 10px;
 }
+
 .footer-card h6 {
     font-size: 30px;
     font-weight: 500;
@@ -307,8 +288,6 @@ h4 {
 }
 
 .footer-btn {
-    display: flex;
-    justify-content: center;
     padding-bottom: 20px;
 }
 
