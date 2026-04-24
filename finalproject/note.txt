@@ -1,0 +1,25 @@
+
+max-width ---> 1600px
+gap ---> 20px -> 60px
+
+1540px/4 -1fr
+
+on card ---> 385px
+
+flex
+nav,ul,right-nav,hero-section,product-header,card-content,category-title,footer-title,
+footer-card,footer-btn
+
+grid 
+card,category-card
+
+
+.card {
+    display: grid;  /*change code*/
+    margin-top: 20px;
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); /*change code*/
+    gap: 20px; /*change code*/
+}
+
+justify-content: center;
+ul,footer-title,btn-footer
